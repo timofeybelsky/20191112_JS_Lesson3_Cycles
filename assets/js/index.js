@@ -5,10 +5,11 @@ function task()
 
   const userNumber = Number( prompt("How many cycles?") );
 
+  let i = 0;
 
-  for(let i = 0; i < userNumber; i++) {
-    console.log("Cycle # " + i);
-  }
+  do{
+    console.log("Cycle...");
+  }while( i++ < userNumber );
 
   console.log("End of program");
 
