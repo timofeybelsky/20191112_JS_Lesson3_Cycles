@@ -1,32 +1,16 @@
 "use strict";
 
-const firstValue = prompt("Enter firstValue:");
-const secondValue = prompt("Enter secondValue:");
+function task()
+{
 
-const mark = prompt("Please enter opeartion mark:");
+  const userNumber = Number( prompt("Your number:") );
 
-switch(mark){
-  case "+":{console.log(sumNumbers(firstValue, secondValue));} break;
-  case "-":{console.log(minusNumbers(firstValue, secondValue));} break;
-  case "*":{console.log(multipeNumbers(firstValue, secondValue));} break;
-  case "/":{console.log(divideNumbers(firstValue, secondValue));} break;
-  default:{alert("ERROR!!! WTF!!!");} break;
-}
+  let i = 0;
 
-// ТУТЪ ФУНКЦИИ, БАРИН!
+  while(i++ < userNumber) {
+    console.log("Inside cycle - Hello! " + i);
+  }
 
-function sumNumbers(numberOne, numberTwo){
-  return +numberOne + +numberTwo;
-}
+  console.log("End of program");
 
-function minusNumbers(numberOne, numberTwo){
-  return +numberOne - +numberTwo;
-}
-
-function multipeNumbers(numberOne, numberTwo){
-  return +numberOne * +numberTwo;
-}
-
-function divideNumbers(numberOne, numberTwo){
-  return +numberOne / +numberTwo;
 }
