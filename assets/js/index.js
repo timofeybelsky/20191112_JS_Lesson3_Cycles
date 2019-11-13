@@ -3,12 +3,11 @@
 function task()
 {
 
-  const userNumber = Number( prompt("Your number:") );
+  const userNumber = Number( prompt("How many cycles?") );
 
-  let i = 0;
 
-  while(i++ < userNumber) {
-    console.log("Inside cycle - Hello! " + i);
+  for(let i = 0; i < userNumber; i++) {
+    console.log("Cycle # " + i);
   }
 
   console.log("End of program");
